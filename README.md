@@ -4,9 +4,9 @@
 ## 1. 🎨 Présentation du projet
 
 ### Concept
-- Thème choisi : …
-- Public cible : …
-- Objectifs du site : …
+- Thème choisi : Générateur de modèle de facture/devis
+- Public cible : Vendeurs
+- Objectifs du site : Mettre à disposition un site permettant de générer des factures
 
 ### Fonctionnalités prévues
 - Navigation : …
