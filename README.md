@@ -4,31 +4,35 @@
 ## 1. 🎨 Présentation du projet
 
 ### Concept
-- Thème choisi : Générateur de modèle de facture/devis
-- Public cible : Vendeurs
-- Objectifs du site : Mettre à disposition un site permettant de générer des factures
+- Thème choisi : Site de présentation d'un générateur de modèle de facture
+- Public cible : Vendeurs indépendants
+- Objectifs du site : Présenter les fonctionnalités du site de générateur de modèle de facture
 
 ### Fonctionnalités prévues
-- Navigation : …
-- Sections principales : …
-- Contenus proposés : …
+- Navigation : Barre de navigation comprenant 4 sections
+- Sections principales : Accueil (index), Fonctionalités (features), A propos (about) et Contact (contact)
+- Contenus proposés : 
 
 ---
 
 ## 2. 📚 Parcours d'apprentissage
 
 ### Ressources utilisées
-- Plateformes (OpenClassrooms, MDN, freeCodeCamp, etc.)
-- Vidéos / tutoriels suivis
-- Articles ou documentations consultés
+- Plateformes : OpenClassrooms
+- Vidéos / tutoriels suivis : Créez votre site web avec HTML5 ET CSS3 de Mathieu Nebra
+
 
 ### Progression
-- Semaine 4 : …
-- Semaine 6 : …
-- Semaine 8 : …
-- Semaine 10 : …
-- Semaine 11 : …
-- Semaine 12 : …
+- Semaine 4 : Choix du thème
+- Semaine 7 : Structure de base HTML (titres et textes)
+- Semaine 10 : HTML complet (sans image) et navigation fonctionnelle entre les différentes pages
+- Semaine 12 : CSS de base
+- Semaine 13 : Responsive Design
+- Semaine 15 : Responsive Design fonctionnel
+- Semaine 16 : Test multi-appareils
+- Semaine 18 : CSS complet et seconde phase de test
+- Semaine 19 : Validation W3C, ajout et opttimisation de l'imagerie et audits de performances
+- Semaine 21 : Rédaction du READ.ME
 
 ---
 
