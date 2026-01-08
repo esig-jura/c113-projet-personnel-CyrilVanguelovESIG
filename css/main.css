@@ -288,7 +288,7 @@ textarea:focus {
 ================================================== */
 
 footer {
-    background-color: var(--color-secondary);
+    background-color: var(--color-white);
     color: var(--color-white);
     text-align: center;
     padding: var(--space-lg);
