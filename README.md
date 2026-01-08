@@ -11,7 +11,7 @@
 ### Fonctionnalités prévues
 - Navigation : Barre de navigation comprenant 4 sections
 - Sections principales : Accueil (index), Fonctionalités (features), A propos (about) et Contact (contact)
-- Contenus proposés : 
+- Contenus proposés : Texte explicatif du site et descriptif de l'entreprise, énumération des fonctionnalités et formulaire de contact
 
 ---
 
@@ -39,10 +39,14 @@
 ## 3. 🛠️ Outils et méthodologie
 
 ### Environnement de travail
-- IDE : …
-- Navigateurs de test : …
+- IDE : WebStorm 2025 2.1
+- Navigateurs de test : Edge
 - Versioning : Git + GitHub
-- Validation : Validator W3C, PageSpeed Insights, Wave
+- Validator W3C : Pas d'erreurs ou d'alertes
+- PageSpeed Insights :
+- Performances bureau : Performances - 100% / Accessibilité - 94% / Bonnes pratiques - 100% / SEO - 91%
+- Performance mobile : Performances - 90% / Accessiblité - 94% / Bonnes pratiques - 100% / SEO - 91%
+- Wave : Score AIM - 8.8/10
 
 ### Méthodologie
 - Approche mobile-first
@@ -75,7 +79,7 @@
   - SEO : …/100  
 
 ### Compatibilité
-- Navigateurs testés : Chrome …, Firefox …, Safari …
+- Navigateurs testés : Chrome, Safari et Edge
 - Appareils testés : mobile, tablette, desktop
 
 ### Accessibilité
