@@ -1,29 +1,32 @@
 :root {
-    --color-primary: #2563eb;
-    --color-secondary: #1f2937;
+    /* Couleurs */
+    --color-primary: #2563eb;   /* bleu moderne */
+    --color-secondary: #1f2937; /* gris foncé */
     --color-background: #f9fafb;
     --color-white: #ffffff;
     --color-muted: #6b7280;
 
+    /* Typographie */
     --font-primary: Arial, sans-serif;
     --font-secondary: Georgia, serif;
 
+    /* Espacements */
     --space-xs: 0.5rem;
     --space-sm: 0.8rem;
     --space-md: 1.2rem;
     --space-lg: 2.5rem;
     --space-xl: 4rem;
 
+    /* UI */
     --radius-sm: 6px;
     --radius-md: 12px;
     --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.08);
     --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.1);
-
-    --transition: 0.3s ease;
+    --transition: 0.25s ease;
 }
 
 /* ==================================================
-   RESET
+   RESET & BASE
 ================================================== */
 
 *,
@@ -34,10 +37,6 @@
     padding: 0;
 }
 
-/* ==================================================
-   BASE
-================================================== */
-
 body {
     font-family: var(--font-primary);
     background-color: var(--color-background);
@@ -46,7 +45,7 @@ body {
 }
 
 /* ==================================================
-   HEADER
+   HEADER & NAVIGATION
 ================================================== */
 
 header {
@@ -62,8 +61,8 @@ header {
     margin: auto;
     padding: var(--space-md);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -79,6 +78,7 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     position: relative;
+    transition: color var(--transition);
 }
 
 nav a::after {
@@ -98,7 +98,7 @@ nav a.active::after {
 }
 
 /* ==================================================
-   MAIN
+   MAIN & SECTIONS
 ================================================== */
 
 main {
@@ -113,7 +113,16 @@ section {
 
 h1, h2 {
     font-family: var(--font-secondary);
+    color: var(--color-secondary);
     margin-bottom: var(--space-md);
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 2.6rem);
+}
+
+h2 {
+    font-size: 1.8rem;
 }
 
 p {
@@ -133,38 +142,16 @@ p {
 }
 
 .hero-text a {
-    margin-top: var(--space-md);
     display: inline-block;
+    margin-top: var(--space-md);
 }
 
-/* ==================================================
-   IMAGES + HOVER
-================================================== */
-
-.hero-image,
-.about-image {
-    text-align: center;
-}
-
-.hero-image img,
-.about-image img {
+/* Image */
+.hero img {
     width: 100%;
     max-width: 520px;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
-    transition: transform var(--transition), filter var(--transition);
-}
-
-.hero-image img:hover,
-.about-image img:hover {
-    transform: scale(1.05);
-    filter: brightness(1.05);
-}
-
-figcaption {
-    margin-top: var(--space-sm);
-    font-size: 0.9rem;
-    color: var(--color-muted);
 }
 
 /* ==================================================
@@ -178,6 +165,7 @@ button {
     border: none;
     padding: 0.9rem 1.6rem;
     border-radius: var(--radius-sm);
+    font-size: 1rem;
     cursor: pointer;
     transition: transform var(--transition), box-shadow var(--transition);
 }
@@ -186,6 +174,63 @@ button {
 button:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-sm);
+}
+
+/* ==================================================
+   LIST
+================================================== */
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: var(--space-sm);
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+}
+
+/* ==================================================
+   FORM
+================================================== */
+
+form {
+    background-color: var(--color-white);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.field {
+    margin-bottom: var(--space-md);
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 1px solid #d1d5db;
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
 }
 
 /* ==================================================
