@@ -42,26 +42,20 @@
 - IDE : WebStorm 2025 2.1
 - Navigateurs de test : Edge
 - Versioning : Git + GitHub
-- Validator W3C : Pas d'erreurs ou d'alertes
-- PageSpeed Insights :
-- Performances bureau : Performances - 100% / Accessibilité - 94% / Bonnes pratiques - 100% / SEO - 91%
-- Performance mobile : Performances - 90% / Accessiblité - 94% / Bonnes pratiques - 100% / SEO - 91%
-- Wave : Score AIM - 8.8/10
 
 ### Méthodologie
-- Approche mobile-first
-- Commits réguliers et messages clairs
-- Appareils de test : PC Lenovo, MacBook Pro, Xiaomi Redmi Note 14 et Iphone 11 Pro
-- Navigateur de test : Edge, Google Chrome, Mozilla Firefox et Safari
+- Approche mobile-first : L'approche de la création du site à d'abord été pensé pour Smartphone (Performances limitées, Interface simple et Design épuré)
+- Commits : Ils ont été effectués à chaque modification apportée avec un commentaire global relatif au thème de la modification
+- Push : Ils ont pratiquement tous été effectués quelques jours avant le délai de remise du projet
 
 ### Choix de design
 - Palette de couleurs :  
-  - Couleur principale : `#2563eb` – …
-  - Couleur secondaire : `#1f2937` – …
-  - Couleur d’accent : `#XXXXXX` – …
-  - Couleur de texte : `#XXXXXX` – …
-  - Couleur de fond : `#f9fafb` – …
-- Lien vers palette générée : …
+  - Couleur principale (éléments interactifs, boutons d'actions et liens importants) : `#2563eb`
+  - Couleur  secondaire (texte principal et zone de navigation) : `#1f2937`
+  - Couleur de fond (fond général des pages et les grandes sections) : `#f9fafb`
+  - Couleur blanche (design UI / bloc de contenu) : `#ffffff`
+  - Couleur atténuée (texte secondaire et éléments explicatifs) : `#6b7280`
+- Lien vers palette générée : 
 - Typographies :  
   - Titres : … (fichiers dans `/fonts`)  
   - Texte : … (fichiers dans `/fonts`)  
@@ -71,17 +65,22 @@
 ## 4. ✅ Tests et validation
 
 ### Validation technique
-- HTML Validator : résultat …
-- CSS Validator : résultat …
+- HTML Validator : Pas d'erreurs ou alertes
+- CSS Validator : Pas d'erreurs ou alertes
 - PageSpeed Insights :  
-  - Performance : …/100  
-  - Accessibilité : …/100  
-  - Bonnes pratiques : …/100  
-  - SEO : …/100  
+  - Performance Bureau : 100/100  
+  - Performance Mobile : 90/100
+  - Accessibilité Bureau : 94/100
+  - Accessibilité Mobile : 94/100
+  - Bonnes pratiques Bureau : 100/100  
+  - Bonnes pratiques Mobile : 100/100
+  - SEO  Bureau : 91/100
+  - SEO Mobile : 91/100
+- Wave : Score AIM - 8.8/10
 
 ### Compatibilité
-- Navigateurs testés : Chrome, Safari et Edge
-- Appareils testés : mobile, tablette, desktop
+- Appareils de test : PC Lenovo, MacBook Pro, Xiaomi Redmi Note 14 et Iphone 11 Pro
+- Navigateur de test : Edge, Google Chrome, Mozilla Firefox et Safari- Appareils de test : PC Lenovo, MacBook Pro, Xiaomi Redmi Note 14 et Iphone 11 Pro
 
 ### Accessibilité
 - Attributs alt : ✅
