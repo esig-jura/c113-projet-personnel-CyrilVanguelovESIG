@@ -146,13 +146,6 @@ p {
     margin-top: var(--space-md);
 }
 
-.hero img {
-    width: 100%;
-    max-width: 520px;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
-}
-
 /* ==================================================
    BUTTON
 ================================================== */
@@ -233,7 +226,36 @@ textarea:focus {
 }
 
 /* ==================================================
-   IMAGE PAGE ABOUT (AJOUT MINIMAL)
+   IMAGE HERO (page index) – effet hover
+================================================== */
+
+.hero-image {
+    text-align: center;
+    margin-top: var(--space-lg);
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition), filter var(--transition);
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+}
+
+.hero-image figcaption {
+    margin-top: var(--space-sm);
+    font-size: 0.9rem;
+    color: var(--color-muted);
+}
+
+/* ==================================================
+   IMAGE PAGE ABOUT – effet hover
 ================================================== */
 
 .about-image {
