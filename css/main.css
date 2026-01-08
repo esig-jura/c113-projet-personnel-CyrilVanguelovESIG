@@ -1,7 +1,7 @@
 :root {
     /* Couleurs */
-    --color-primary: #2563eb;   /* bleu moderne */
-    --color-secondary: #1f2937; /* gris foncé */
+    --color-primary: #2563eb;
+    --color-secondary: #1f2937;
     --color-background: #f9fafb;
     --color-white: #ffffff;
     --color-muted: #6b7280;
@@ -146,19 +146,6 @@ p {
     margin-top: var(--space-md);
 }
 
-/* Image */
-.hero img {
-    width: 100%;
-    max-width: 520px;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
-    transition: transform var(--transition);
-}
-
-.hero img:hover {
-    transform: scale(1.05);
-}
-
 /* ==================================================
    BUTTON
 ================================================== */
@@ -239,6 +226,64 @@ textarea:focus {
 }
 
 /* ==================================================
+   IMAGE HERO (page index) – effet hover
+================================================== */
+
+.hero-image {
+    text-align: center;
+    margin-top: var(--space-lg);
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition), filter var(--transition);
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+}
+
+.hero-image figcaption {
+    margin-top: var(--space-sm);
+    font-size: 0.9rem;
+    color: var(--color-muted);
+}
+
+/* ==================================================
+   IMAGE PAGE ABOUT – effet hover
+================================================== */
+
+.about-image {
+    margin-top: var(--space-xl);
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition), filter var(--transition);
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+}
+
+.about-image figcaption {
+    margin-top: var(--space-sm);
+    font-size: 0.9rem;
+    color: var(--color-muted);
+}
+
+/* ==================================================
    FOOTER
 ================================================== */
 
@@ -262,36 +307,5 @@ footer {
 @media (min-width: 1024px) {
     nav a {
         margin-left: var(--space-lg);
-    }
-}
-
-/* === MENU NAVIGATION SMARTPHONE === */
-
-@media (max-width: 767px) {
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.8rem;
-        justify-content: flex-end;
-    }
-
-    nav a {
-        margin-left: 0;
-        padding: 0.3rem 0.6rem;
-        border-radius: var(--radius-sm);
-        background-color: transparent;
-        transition: background-color var(--transition), color var(--transition);
-    }
-
-    nav a:hover,
-    nav a:focus {
-        background-color: var(--color-primary);
-        color: var(--color-white);
-        outline: none;
-    }
-
-    nav a.active {
-        background-color: var(--color-primary);
-        color: var(--color-white);
     }
 }
