@@ -31,7 +31,7 @@
 - Semaine 15 : Responsive Design fonctionnel
 - Semaine 16 : Test multi-appareils
 - Semaine 18 : CSS complet et seconde phase de test
-- Semaine 19 : Validation W3C, ajout et opttimisation de l'imagerie et audits de performances
+- Semaine 19 : Validation W3C, ajout et optimisation de l'imagerie et audits de performances
 - Semaine 21 : Rédaction du READ.ME
 
 ---
