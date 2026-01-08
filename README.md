@@ -84,7 +84,7 @@
 - Hiérarchie des titres : ✅
 - Contraste couleurs : conforme WCAG à 100%
 - Navigation clavier : testée
-- Zoom 200% : lisible
+- Zoom 200% : lisible et fonctionnel
 
 ---
 
