@@ -3,8 +3,8 @@
     --color-primary: #2563eb;
     --color-secondary: #1f2937;
     --color-background: #f9fafb;
-    --color-white: #ffffff;
-    --color-muted: #4B5563;
+    --color-white: #ffffff; /* blanc pur pour meilleur contraste dans le footer */
+    --color-muted: #4B5563; /* gris plus foncé pour texte secondaire conforme WCAG */
 
     /* Typographie */
     --font-primary: Arial, sans-serif;
