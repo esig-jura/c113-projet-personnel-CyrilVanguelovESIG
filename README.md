@@ -55,10 +55,7 @@
   - Couleur de fond (fond général des pages et les grandes sections) : `#f9fafb`
   - Couleur blanche (design UI / bloc de contenu) : `#ffffff`
   - Couleur atténuée (texte secondaire et éléments explicatifs) : `#6b7280`
-- Lien vers palette générée : 
-- Typographies :  
-  - Titres : … (fichiers dans `/fonts`)  
-  - Texte : … (fichiers dans `/fonts`)  
+- Typographies :  Je n'avais pas pensé à créer un dossier fonts et images et il était trop tard quand je m'en suis rendu compte
 
 ---
 
@@ -85,7 +82,7 @@
 ### Accessibilité
 - Attributs alt : ✅
 - Hiérarchie des titres : ✅
-- Contraste couleurs : conforme WCAG
+- Contraste couleurs : conforme WCAG à 100%
 - Navigation clavier : testée
 - Zoom 200% : lisible
 
@@ -98,13 +95,12 @@
 - Contexte : génération de code et debug
 
 ### Utilisation détaillée
-- Contenu généré avec l’IA : 
-- Explication et adaptation personnelle du code généré
+- Contenu généré avec l’IA : Une partie du code CSS (certaines fonctionalités pour les images, les boutons et principalement la navigation)
 
 ### Proportion
-- Structure HTML : …% personnel / …% aidé
-- CSS : …% personnel / …% aidé
-- Responsive : …% personnel
+- Structure HTML : 90% personnel / 10% aidé
+- CSS : 60% personnel / 40% aidé
+- Responsive : 70% personnel
 - Tests et validation : 100% personnel
 
 ---
@@ -112,21 +108,20 @@
 ## 6. 🎯 Bilan personnel
 
 ### Ce que j’ai appris
-- Compétences techniques acquises  
-- Découvertes surprenantes  
-- Concepts difficiles maîtrisés  
+- Compétences techniques acquises  :
+  - HTML : Ordrer le code HMTL, définir les champs, création de liste, création de menu dans l'entête
+  - CSS : Couleur, typographie, espacements
 
 ### Difficultés rencontrées
-- Problèmes techniques et solutions trouvées  
-- Moments de blocage et dépassement  
-- Aide reçue et sources  
+- Problèmes techniques et solutions trouvées : Problème de conformité WCAG (changement de couleur pour les boutons et pour le pied de page mais perte en matière de design) 
+- Moments de blocage et dépassement : Certaines fonctionnalités dans le code CSS comme pour les images (agrandir l'image quand on passe le curseur par exemple) ainsi que pour la navigation ou Chat GPT m'a été très utile
+- Aide reçue et sources : Je me suis aidé de la formation en ligne sur Open Classroom ainsi que de Chat GPT
 
 ### Réussites et fiertés
-- Aspects du projet dont je suis fier  
-- Progrès constatés depuis le début  
-- Envies de développement futur  
+- Aspects du projet dont je suis fier : Ce fut mes premiers pas dans la création de site et je suis content d'avoir pu produire un site même s'il reste basique d'utilsation
+- Envies de développement futur : Adapter le site créé afin de le rendre fonctionnel
 
 ### Améliorations possibles
-- Ce que j’ajouterais avec plus de temps  
-- Fonctionnalités bonus envisagées  
-- Compétences à approfondir  
+- Ce que j’ajouterais avec plus de temps : Je créerais un dossier "Fonts" et un autre "Images" (afin de pouvoir disposer des images même si elles sont supprimées d'Internet par exemple)
+- Fonctionnalités bonus envisagées  : Ajouter un onglet "Remplir sa facture" avec la possiblité d'y ajouter des informations, un logo, bouton d'impression, etc...
+- Compétences à approfondir : Je pense avoir acquis certaines compétences lors de ce projet principalement en HTML mais également en CSS, même si certaines compétences CSS en terme de navigation meriterait d'être explorées plus en profondeur.
