@@ -1,7 +1,7 @@
 :root {
     /* Couleurs */
-    --color-primary: #2563eb;   /* bleu moderne */
-    --color-secondary: #1f2937; /* gris foncé */
+    --color-primary: #2563eb;
+    --color-secondary: #1f2937;
     --color-background: #f9fafb;
     --color-white: #ffffff;
     --color-muted: #6b7280;
@@ -146,7 +146,6 @@ p {
     margin-top: var(--space-md);
 }
 
-/* Image */
 .hero img {
     width: 100%;
     max-width: 520px;
@@ -231,6 +230,35 @@ input:focus,
 textarea:focus {
     outline: none;
     border-color: var(--color-primary);
+}
+
+/* ==================================================
+   IMAGE PAGE ABOUT (AJOUT MINIMAL)
+================================================== */
+
+.about-image {
+    margin-top: var(--space-xl);
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition), filter var(--transition);
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+}
+
+.about-image figcaption {
+    margin-top: var(--space-sm);
+    font-size: 0.9rem;
+    color: var(--color-muted);
 }
 
 /* ==================================================
