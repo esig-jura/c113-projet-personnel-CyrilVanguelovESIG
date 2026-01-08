@@ -25,10 +25,6 @@
     --transition: 0.25s ease;
 }
 
-/* ==================================================
-   RESET & BASE
-================================================== */
-
 *,
 *::before,
 *::after {
@@ -43,10 +39,6 @@ body {
     color: var(--color-secondary);
     line-height: 1.6;
 }
-
-/* ==================================================
-   HEADER & NAVIGATION
-================================================== */
 
 header {
     background-color: var(--color-white);
@@ -97,10 +89,6 @@ nav a.active::after {
     width: 100%;
 }
 
-/* ==================================================
-   MAIN & SECTIONS
-================================================== */
-
 main {
     max-width: 1100px;
     margin: auto;
@@ -131,10 +119,6 @@ p {
     margin-bottom: var(--space-md);
 }
 
-/* ==================================================
-   HERO
-================================================== */
-
 .hero {
     display: grid;
     gap: var(--space-xl);
@@ -145,10 +129,6 @@ p {
     display: inline-block;
     margin-top: var(--space-md);
 }
-
-/* ==================================================
-   BUTTON
-================================================== */
 
 .btn,
 button {
@@ -168,10 +148,6 @@ button:hover {
     box-shadow: var(--shadow-sm);
 }
 
-/* ==================================================
-   LIST
-================================================== */
-
 ul {
     list-style: none;
 }
@@ -188,10 +164,6 @@ li::before {
     left: 0;
     color: var(--color-primary);
 }
-
-/* ==================================================
-   FORM
-================================================== */
 
 form {
     background-color: var(--color-white);
@@ -225,10 +197,6 @@ textarea:focus {
     border-color: var(--color-primary);
 }
 
-/* ==================================================
-   IMAGE HERO (page index) – effet hover
-================================================== */
-
 .hero-image {
     text-align: center;
     margin-top: var(--space-lg);
@@ -253,10 +221,6 @@ textarea:focus {
     font-size: 0.9rem;
     color: var(--color-muted);
 }
-
-/* ==================================================
-   IMAGE PAGE ABOUT – effet hover
-================================================== */
 
 .about-image {
     margin-top: var(--space-xl);
@@ -283,20 +247,12 @@ textarea:focus {
     color: var(--color-muted);
 }
 
-/* ==================================================
-   FOOTER
-================================================== */
-
 footer {
     background-color: var(--color-white);
     color: var(--color-white);
     text-align: center;
     padding: var(--space-lg);
 }
-
-/* ==================================================
-   RESPONSIVE
-================================================== */
 
 @media (min-width: 768px) {
     .hero {
