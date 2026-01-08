@@ -132,7 +132,7 @@ p {
 
 .btn,
 button {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     color: var(--color-white);
     border: none;
     padding: 0.9rem 1.6rem;
@@ -146,6 +146,7 @@ button {
 button:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-sm);
+    filter: brightness(1.1);
 }
 
 ul {

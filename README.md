@@ -94,11 +94,11 @@
 ## 5. 🤖 Usage de l’IA (si applicable)
 
 ### IA utilisée
-- Nom et version : …
-- Contexte : génération de code / debug / recherche / rédaction
+- Nom et version : Chat GPT - Modèle GPT-4.1
+- Contexte : génération de code et debug
 
 ### Utilisation détaillée
-- Contenu généré avec l’IA : …
+- Contenu généré avec l’IA : 
 - Explication et adaptation personnelle du code généré
 
 ### Proportion
