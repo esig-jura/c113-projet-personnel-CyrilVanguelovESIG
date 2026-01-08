@@ -1,95 +1,211 @@
 :root {
-    --primary-color: #1e90ff;
-    --secondary-color: #333;
-    --light-color: #f4f4f9;
-    --white-color: #fff;
+    /* Couleurs */
+    --color-primary: #2563eb;   /* bleu moderne */
+    --color-secondary: #1f2937; /* gris foncé */
+    --color-background: #f9fafb;
+    --color-white: #ffffff;
+    --color-muted: #6b7280;
 
+    /* Typographie */
     --font-primary: Arial, sans-serif;
     --font-secondary: Georgia, serif;
 
+    /* Espacements */
+    --space-xs: 0.5rem;
     --space-sm: 0.8rem;
-    --space-md: 1rem;
-    --space-lg: 2rem;
+    --space-md: 1.2rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+
+    /* UI */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --transition: 0.25s ease;
 }
 
-/* RESET */
-* {
+/* ==================================================
+   RESET & BASE
+================================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: var(--font-primary);
-    background-color: var(--light-color);
-    color: var(--secondary-color);
-    line-height: 1.5;
+    background-color: var(--color-background);
+    color: var(--color-secondary);
+    line-height: 1.6;
 }
 
-/* HEADER */
+/* ==================================================
+   HEADER & NAVIGATION
+================================================== */
+
 header {
-    background-color: var(--primary-color);
-    padding: var(--space-md);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: var(--space-md);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
     font-family: var(--font-secondary);
     font-size: 1.8rem;
-    color: var(--white-color);
     font-weight: bold;
+    color: var(--color-primary);
 }
 
 nav a {
-    color: var(--white-color);
     margin-left: var(--space-md);
+    color: var(--color-secondary);
     text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color var(--transition);
 }
 
-nav a:hover,
-nav a.active {
-    text-decoration: underline;
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width var(--transition);
 }
 
-/* MAIN */
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
+}
+
+/* ==================================================
+   MAIN & SECTIONS
+================================================== */
+
 main {
-    padding: var(--space-lg);
+    max-width: 1100px;
+    margin: auto;
+    padding: var(--space-xl) var(--space-md);
 }
 
 section {
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-xl);
 }
 
 h1, h2 {
-    color: var(--primary-color);
-    margin-bottom: var(--space-md);
     font-family: var(--font-secondary);
+    color: var(--color-secondary);
+    margin-bottom: var(--space-md);
 }
 
-/* HERO */
+h1 {
+    font-size: clamp(2rem, 4vw, 2.6rem);
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+p {
+    max-width: 65ch;
+    color: var(--color-muted);
+    margin-bottom: var(--space-md);
+}
+
+/* ==================================================
+   HERO
+================================================== */
+
 .hero {
-    text-align: center;
+    display: grid;
+    gap: var(--space-xl);
+    align-items: center;
 }
 
+.hero-text a {
+    display: inline-block;
+    margin-top: var(--space-md);
+}
+
+/* Image */
 .hero img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: var(--space-lg);
+    width: 100%;
+    max-width: 520px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
 }
 
-/* FORM */
+/* ==================================================
+   BUTTON
+================================================== */
+
+.btn,
+button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 0.9rem 1.6rem;
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.btn:hover,
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ==================================================
+   LIST
+================================================== */
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: var(--space-sm);
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+}
+
+/* ==================================================
+   FORM
+================================================== */
+
 form {
-    max-width: 500px;
-    margin: auto;
-    background-color: var(--white-color);
+    background-color: var(--color-white);
     padding: var(--space-lg);
-    border-radius: 8px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
 }
 
 .field {
@@ -97,47 +213,49 @@ form {
 }
 
 label {
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
     display: block;
-    margin-bottom: var(--space-sm);
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
-    padding: var(--space-md);
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: var(--space-sm);
+    border: 1px solid #d1d5db;
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
 }
 
-button {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    border: none;
-    padding: var(--space-md);
-    cursor: pointer;
-    width: 100%;
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
 }
 
-/* FOOTER */
+/* ==================================================
+   FOOTER
+================================================== */
+
 footer {
-    background-color: var(--secondary-color);
-    color: var(--white-color);
+    background-color: var(--color-secondary);
+    color: var(--color-white);
     text-align: center;
-    padding: var(--space-md);
+    padding: var(--space-lg);
 }
 
-/* RESPONSIVE */
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
 @media (min-width: 768px) {
     .hero {
-        max-width: 900px;
-        margin: auto;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (min-width: 1024px) {
-    .hero {
-        display: flex;
-        align-items: center;
-        gap: var(--space-lg);
-        text-align: left;
+    nav a {
+        margin-left: var(--space-lg);
     }
 }
